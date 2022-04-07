@@ -1,0 +1,49 @@
+@keyframes setting-list {
+  from {
+    opacity: 0;
+    transform: translateZ(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: setting-list 1s linear;
+}
+
+
+@keyframes setting-i {
+  from {
+    opacity: 0;
+    transform: translateZ(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+
+.settings__setting i {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 22px;
+  animation: setting-i 1s linear;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
